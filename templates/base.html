@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Mental Health Stats</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-200">
+
+    <header class="bg-blue-600 text-white p-4">
+        <h1 class="text-2xl">Welcome to Mental Health Stats</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="/" class="hover:underline">Home</a></li>
+                <li><a href="/azure_data" class="hover:underline">Azure</a></li>
+            </ul>
+        </nav>
+    </header>
+  <main class="p-4">
+        {% block content %}{% endblock %}
+    </main>
+
+    <p>This website will show information based on mental health concerns of your choosing</p>
+    <p>For now, it will show you information regarding the mental health diagnosis of adults</p>
+    <p>You will see that there appear to be some associations between sex, age, race, and other factors</p>
+    <p>You can access this information by clicking the Data section above.</p>
+    <img src="https://d2jx2rerrg6sh3.cloudfront.net/images/Article_Images/ImageForArticle_22028_16430272124432966.jpg">
+    
+    <footer class="bg-blue-600 text-white p-4 mt-6">
+        <p>© 2023 Mental Health Stats. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
